@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(161, 184, 184);
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 90%;
+    margin: 50px auto 50px auto;
+}
+
+aside h1{
+    margin: 0 auto;
+    font-size: 70px;
+}
+
+aside p{
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+
+.nombre{
+    text-align: center;
+    padding: 40px;
+}
+
+.exp_cont,
+.form_cont,
+.hab_cont{
+    margin-left: 60px;
+}
+
+footer{
+    text-align: center;
+}
+
+aside .nombre img{
+    width: 150px;
+    border-radius: 10%;
+    border: solid black;
+    
+    position: absolute;
+    top: 50px;
+    left: 220px; 
+}
+
+.datos ul{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 17px;
+}
+
+.datos li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    
+    
+
+}
