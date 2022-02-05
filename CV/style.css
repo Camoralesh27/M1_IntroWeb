@@ -1,58 +1,104 @@
+/* SECCION: Variables globlales */
+:root{
+    --a: #D9C589;
+    --b: #BF9765;
+    --c: #e9e8dc; /* anterior #A0D9D9 */
+    --d: #6f7d7e; /* anterior #45858C */
+    --e: #db583b;
+    --fonta: rgb(36, 36, 36);
+    --fontb: rgb(255, 255, 255);  
+}
+/* Hack para BOX MODEL y converciones de px a rem*/
+html{ 
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* FINAL DE: Hack para BOX MODEL y converciones de px a rem*/
+
+
+/* TODO EL CUERPO */
 body{
-    background-color: rgb(161, 184, 184);
+    background-color: var(--c);
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
     width: 90%;
-    margin: 50px auto 50px auto;
+    margin: 5rem auto 5rem auto;
+}
+
+/* DATOS PERSONALES */
+aside{
+    background-color: var(--d);
+    color: var(--fonta);
 }
 
 aside h1{
     margin: 0 auto;
-    font-size: 70px;
+    font-size: 7rem;
 }
 
 aside p{
     margin: 0 auto;
     font-weight: bold;
-    font-size: 25px;
-}
-
-
-.nombre{
-    text-align: center;
-    padding: 40px;
-}
-
-.exp_cont,
-.form_cont,
-.hab_cont{
-    margin-left: 60px;
-}
-
-footer{
-    text-align: center;
+    font-size: 2.5rem;
 }
 
 aside .nombre img{
-    width: 150px;
+    width: 15rem;
     border-radius: 10%;
     border: solid black;
     
     position: absolute;
-    top: 50px;
-    left: 220px; 
+    top: 5rem;
+    left: 22rem; 
+}
+
+.nombre{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.datos{
+    background-color: var(--b);
+    color: var(--fonta);
+    padding: 0.1rem; 
 }
 
 .datos ul{
-    margin: 20px auto;
+    margin: 2rem auto;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 .datos li{
     list-style: none;
     display: inline-block;
-    margin: 0 30px;
-    
-    
+    margin: 0 3rem;
+}
 
+/* CONTENIDO */
+main{
+    background-color: var(--a);
+    
+}
+
+.exp_cont, 
+.form_cont,
+.hab_cont{
+    margin-left: 4rem;
+}
+
+main h2{
+    text-align: center;
+    background-color: var(--e);
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: var(--b);
+    padding: 4rem;
 }
